@@ -1,0 +1,278 @@
+/* ================================================
+ 	Author: Jeff Carroll
+	Class: DWS2
+	Purpose: Week Two Project 
+	Site: http://jdcarroll.github.io/NextlvlSports/index.html
+	Date: 1/19/2015
+
+/* ================================================
+					Color Swatches  
+===================================================
+	Blue 		#020F46;
+	light Blue  #5C87BE;
+	Red 		#A40C34;
+	Gray 		#C2C7C7;
+	D.Gray 		#666666;
+================================================== */
+
+/*=================================================
+					Main Elements
+===================================================*/
+
+body {
+	background-image: url(../images/sos.png);
+	font-family: 'Jura', sans-serif;
+}
+
+p {
+	font-family: 'Jura', sans-serif;
+}
+.container {
+	background-color: #ffffff;
+}
+
+.navbar-brand {
+	padding: 10px 10px;
+}
+
+#logo {
+	width: 70%;
+}
+
+img[src="images/cta.jpg"]{
+	width: 100%;
+}
+
+.banner {
+	text-align: left;
+	width: 100%;
+	padding: 15px;
+	background-color: rgba(2,15,70,.5);
+}
+.jumbotron {
+	padding: 0px;
+	padding-right: 0px;
+}
+
+
+img[src="images/large_logo.png"] {
+	margin-bottom: 20px;
+	zoom:10%;	
+}
+
+#cta_message {
+	padding: 20px;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.addedPadding {
+	margin-bottom: 25px;
+}
+
+.btn-primary {
+	background-color: #020F46;
+	border-color: #020F46;
+}
+
+.btn-primary:hover {
+	background-color: #A40C34;
+	border-color: #A40C34;
+}
+
+.quote { 
+	margin-left: 20px;
+	margin-bottom: 20px;
+	background-image: url(../images/mound.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 50%;
+	text-align: right;
+	height: 300px;
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+blockquote {
+	border: none;
+	color: #C2C7C7;
+}
+
+section {
+	clear: both;
+	width: 100%;
+	background-color: #020F46;
+	overflow: auto;
+}
+
+article {
+	float: left;
+	margin: auto;
+	width: 31%;
+	margin: 10px;
+	padding: 5px;
+	color: #5C87BE;
+}
+
+article a {
+	color: #C2C7C7;
+}
+
+#contact {
+	background-color: #5C87BE;
+	border-radius: 0px;
+	margin-top: 10px;
+}
+
+#contact article {
+	width: 98%;
+	color: #020F46;
+	border-bottom: 1px solid #020F46;
+}
+
+#contact article:nth-of-type(2) {
+	width: 98%;
+	color: #020F46;
+	border-bottom: none;
+}
+
+#contact article div {
+	border-right: 1px solid #020F46;
+	width: 30%;
+	margin: 10px;
+	float: left;
+}
+
+#contact article div > div {
+	margin-top: 0px;
+	border: none;
+	width: auto;
+	
+	padding-right: 10px;
+	text-align: right;
+}
+
+#contact article div img {
+	float: left;
+	margin: 0px 0px 0px 100px;
+	zoom: 2.7%;
+}
+
+.tel {
+	font-weight: lighter;
+	font-size: 1.3em;
+}
+
+#contact article div nav div{
+	margin: 5px;
+	border: none;
+	width: 40%;
+}
+
+#contact article div nav div:nth-of-type(2) {
+	float: right;
+}
+
+#contact article div nav ul {
+	padding-left: 0px;
+	float: left;
+}
+
+#contact article div nav ul li {
+	list-style: none;
+}
+
+#contact article div nav ul li a {
+	color: #020F46;
+	font-weight: bold;
+	font-size: 1.2em;
+} 
+
+article div img[src="images/BaseBall_300.png"] {
+	zoom: 10%;
+	margin-right: 150px;
+	float: left;
+}
+
+div img[src="images/BaseBall_300.png"] {
+	zoom:70%;
+}
+/*=================================================
+				Media Query Elements
+===================================================*/
+
+@media screen and (min-width: 992px) and (max-width:1200px){
+		img[src="images/large_logo.png"] {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		zoom:7%;	
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width:991px){
+	img[src="images/large_logo.png"] {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		zoom:3%;	
+	}
+	article {
+		width: 45%;
+	}
+
+	article:nth-of-type(3){
+		float: none;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 564px) and (max-width:768px){
+	img[src="images/large_logo.png"] {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		zoom:5%;	
+	}
+	
+	#cta_message {
+		padding: 20px;
+		font-weight: bold;
+		font-size: 1.7em;
+	}
+
+	.quote {
+		width: 100%;
+		height: auto;
+	}
+
+	article {
+		float: none;
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 563px){
+		img[src="images/large_logo.png"] {
+		margin-top: 5px;
+		margin-bottom: 10px;
+		zoom:2%;	
+	}
+			#cta_message {
+		padding: 5px;
+		font-weight: bold;
+		font-size: 1em;
+	}
+	.quote {
+		width: 100%;
+		height: auto;
+	}
+	table {
+		font-size: 10px;
+	}
+	article {
+		float: none;
+		width: 95%;
+	}
+}
+ 

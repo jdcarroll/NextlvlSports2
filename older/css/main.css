@@ -1,0 +1,382 @@
+/* ================================================
+ 	Author: Jeff Carroll
+	Class: DWS2
+	Purpose: Week one Project 
+	Site: http://jdcarroll.github.io/NextlvlSports/index.html
+	Date: 1/9/2015
+
+/* ================================================
+					Color Swatches  
+===================================================
+	Blue 		#020F46;
+	Red 		#A40C34;
+	Gray 		#C2C7C7;
+	D.Gray 		#666666;
+================================================== */
+
+/*=================================================
+					Main Elements
+===================================================*/
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	font: 62.5%/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;	
+	background: #FFFFFF;
+	color: #474747;
+}
+
+#wrapper {
+	max-width: 960px;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+#logo_background {
+	display: block;
+	position: relative;
+}
+
+#logo_background::after {
+	content: "";
+	background: url(../images/Half_LogoBW.svg);
+	opacity: 0.025;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+
+/*=================================================
+					Header Elements
+===================================================*/
+
+header {
+	padding-bottom: 100px;
+}
+
+#wrapper > header > div:nth-of-type(1) {
+	width:15%;
+	float: left;
+	padding-bottom: 20px;
+	margin-bottom: 5px;
+	background-image: url(../images/full_Logo.svg);
+	background-repeat: no-repeat;
+	zoom: 300%;
+}
+
+form {
+	float: right;
+	margin-right: 10px;
+}
+
+form input[type = search]{
+	border-radius: 0px;
+	float: left;
+	padding-top: 2px;
+	margin-top: 8px;
+	border-color: #C2C7C7;
+	border-width: 1px;
+	color: #666666;
+}
+
+form button{
+	border:none;
+	background-color: #ffffff;
+	cursor: pointer;
+	float: right;
+	zoom: 42%;
+	margin-top: 18px;
+	padding-top: 4px;
+}
+
+/*=================================================
+					Nav Elements
+===================================================*/
+
+
+nav {
+	margin-top: 0px;
+	width: 65%;
+	display: block;
+	background-color: #FFFFFF;
+	float: left;
+}
+
+nav ul {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 0;
+	list-style-type: none;
+	overflow: hidden;
+	
+}
+
+nav li{
+	text-align: center;
+	float: left;
+	width: 20%;
+	text-transform: capitalize;
+	
+}
+
+nav a  {
+	line-height: 30px;
+	display: block;
+	color: #020F46;
+}
+
+nav a:hover {
+	color: #A40C34;
+	background-color: #020F46;
+}
+
+/*=================================================
+					Page Elements
+===================================================*/
+
+a {
+	text-decoration: none;
+}
+
+section:nth-of-type(1){
+	margin: auto;
+	width: 98%;
+}
+
+section:nth-of-type(1) img[src="images/cta.jpg"]{
+	margin-top: 10px;
+	clear:both;
+	width: 100%;
+	box-shadow: 1px 1px 5px #666666;
+	border-radius: 10px;
+}
+
+section:nth-of-type(2) {
+	clear:both;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 450px;
+}
+
+section > div {
+	width: 95%;
+	margin: 0 auto;
+}
+
+section > div > article {
+	float: left;
+	box-shadow: 1px 1px 5px #666666;
+	padding: 10px;
+	padding-bottom: 10px;
+	margin: 10px;
+	width: 28%;
+	min-height: 250px;
+	background-color: #ffffff;
+}
+
+section > div > article > div {
+	max-height: 194px;
+	overflow: hidden;
+}
+
+section > div > article > div + a {
+	padding-top: 10px;
+	float: right;
+}
+
+/*=================================================
+					Footer Elements
+===================================================*/
+
+footer {
+	width:100%;
+	height:50px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background:#020F46;
+	z-index: 1;
+}
+
+footer > div {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+footer a:hover {
+	color: #A40C34;
+}
+
+footer > div > h3 {
+	font-size: 1.7em;
+	margin: 0px;
+}
+
+footer > div > h3 > a{
+	color: white;
+	line-height: 50px;
+	float: left;
+	padding: 0 10px;
+	margin: 0px;
+}
+
+footer h3:last-child{
+	float: right;
+}
+
+/*=================================================
+					Media Queries
+===================================================*/
+
+@media screen and (min-width: 500px) and (max-width:789px){
+
+	nav {
+		display: block;
+		width: 100%;
+		background-color: blue;
+	}
+
+	nav li {
+		background-color: #020F46;
+		width: 100%;
+		font-size: 1.8em;
+	}
+
+	nav li a {
+		line-height: 60px;
+		color: #ffffff;
+	}
+
+	nav li a:hover {
+		background-color: #A40C34;
+		color: #020F46;
+	}
+
+	nav li:last-child{
+		margin-bottom: 10px;
+	}
+	
+	section > div > article{
+		width:45%;
+		margin: 10px auto;
+	}
+	section > div > article:nth-of-type(2){
+		float: right;
+	}
+
+	 section > div > article:nth-of-type(3){
+	 	clear:both;
+	 	float: none;
+	 	width: 45%;
+	 	margin: 0px auto;
+	 }
+
+	 section:nth-of-type(2) {
+	 	padding-bottom: 150px;
+	 }
+
+	 footer {
+		height: 40px;
+	}
+
+	footer h3 a {
+		padding: 0 10px;
+		font-size: .7em;
+	}
+
+	footer > div > h3 > a {
+		line-height: 40px;
+	}
+}
+
+
+@media screen and (max-width:499px) {
+	
+	section > div > article {
+		float: none;
+		width:95%;
+		margin: 10px auto;
+	}
+
+	section > div > article:nth-of-type(3) {
+		width: 95%;
+	}
+
+	section:nth-of-type(2) {
+	 	padding-bottom: 150px;
+	 }
+
+	header {
+		background-color: #ffffff;
+		box-shadow: 1px 0px 5px #666666;
+		padding-bottom: 45px;
+		margin-bottom: 10px; 
+	}
+
+	#wrapper > header > div:nth-of-type(1){
+		background-image: url(../images/logo_small.png);
+		zoom: 80%;
+		padding-bottom: 50px;
+		padding-right: 220px;
+	}
+	form {
+		margin-right: 0px;
+	}
+	form button{
+		border: none;
+		background-repeat: no-repeat;
+		zoom:44%;
+	}
+
+	nav {
+		display: block;
+		width: 100%;
+		background-color: blue;
+	}
+
+	nav li {
+		background-color: #020F46;
+		width: 100%;
+		font-size: 1.8em;
+	}
+
+	nav li a {
+		color: #ffffff;
+	}
+
+	nav li a:active {
+		background-color: #A40C34;
+		color: #020F46;
+	}
+
+	nav li:last-child{
+		margin-bottom: 10px;
+	}
+
+	footer {
+		height: 30px;
+	}
+
+	footer h3 a {
+		padding: 0 10px;
+		font-size: .1em;
+	}
+
+	footer > div > h3 > a {
+		line-height: 30px;
+	}
+
+	#wrapper > header > div:nth-of-type(1){
+			zoom: 60%;
+		}
+
+}
+		
