@@ -1,0 +1,325 @@
+/* ================================================
+  Author: Jeff Carroll
+  Class: DWS2
+  Purpose: Week Two Project 
+  Site: http://jdcarroll.github.io/NextlvlSports/index.html
+  Date: 1/19/2015
+
+/* ================================================
+          Color Swatches  
+===================================================
+  Blue    #020F46;
+  light Blue  #5C87BE;
+  Red     #A40C34;
+  Gray    #C2C7C7;
+  D.Gray    #666666;
+================================================== */
+
+/*=================================================
+          Main Elements
+===================================================*/
+
+* {
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px 15%;
+  background-image: url(../images/turf.png);
+  color: #666666;
+  font-family: 'Jura', sans-serif;
+
+}
+
+.container {
+  position: relative;
+  padding: 20px 5px;
+  max-width: 1300px;
+  background-color: #ffffff;
+  border-radius: 5px; 
+}
+
+
+
+#baseball {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+}
+
+#edition {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+#edition img {
+	zoom: 5%;
+}
+
+form header {
+  width: 100%;
+  margin: 0; 
+  overflow: auto;
+}
+
+nav {
+	width: 100%;
+	background-color: #020F46;
+	
+}
+
+nav ul {
+	padding: 0px;
+	width: 37%;
+	overflow: hidden;
+}
+
+nav li {
+	line-height: 40px;
+	list-style: none;
+	padding: 0px 20px;
+	float: left;
+	transition: all .5s;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #C2C7C7 ;
+}
+
+nav li:hover {
+	background-color: #A40C34;
+}
+
+
+.escape {
+  width: 110px;
+  background-image: url(../images/logo_small.png);
+  background-repeat: no-repeat;
+  float: left;
+  padding: 30px 110px;
+}
+
+form header div {
+  font-size: 90%;
+  color: #999;
+}
+form header h2 {
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+
+label[for=points]{
+	line-height: 40px;
+}
+
+#skill {
+	float: left;
+	width: 38%%;
+}
+
+#skill input[type=range]{
+	margin-left: 0;
+	width: 100%;
+}
+
+#novice {
+	float: left;
+}
+
+#pro{
+	text-align: right;
+}
+form > div input[type="range"]{
+	background: #020F46;
+	margin-top: 7px;
+	height: .1px;
+	-webkit-appearance: none;
+	border-radius: 8px;
+}
+form > hr {
+  border-color: 
+}
+
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+  line-height: 25px;
+  width: 25%;
+  float: left;
+  text-align: left;
+  padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+fieldset {
+	border: 0;
+  padding: 0;
+}
+
+form hr {
+  clear: both;
+  margin: 5px;
+  border-color: #020F46; 
+}
+select,
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type="range"],
+input[type="date"],
+input[type=textfield],
+textarea {
+	width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type="range"],
+input[type="date"],
+input[type=textfield]
+ {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type="range"]:focus,
+textarea:focus {
+  tranform: all 2s;
+  outline: 10;
+  border-color: #4697e4;
+}
+
+form input[type=submit] {
+  padding: 5px 10px;
+  background-color: #5C87BE;
+  border-radius: 5px;
+  color: #C2C7C7;
+  border: none;
+}
+
+form input[type=submit]:hover {
+  background-color: #020F46;
+}
+
+@media (max-width: 600px) {
+
+  
+  #skill{
+  	float: none;
+  	width: 100%;
+  }
+
+  .escape {
+    width: 350px;
+    height: 184px;
+    background-image: url(../images/large_logo.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    zoom:70%;
+  }
+
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+	  width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  input[type="range"],
+  input[type=textfield],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%; 
+  }
+  #baseball {
+  	display: none;
+  }
+}
+
+@media screen and (max-width: 842px) {
+	nav {
+		width: 100%;
+	}
+	
+	nav ul {
+		width: 100%;
+	}
+	nav ul li {
+		width: 100%;
+		text-align: center;
+	}
+		
+}
+
+@media screen and (max-width:1000px) {
+	
+	
+	nav ul {
+		width: 100%; 
+		margin: 0 auto;
+	}
+	
+		
+    .escape {
+        float: none;
+        margin: 0 auto
+    }
+    #baseball {
+    	zoom: 40%;
+    }
+}
+
+@media screen and (min-width:1001px) and (max-width: 1200px) {
+	#baseball {
+		zoom: 60%;
+	}
+}
+
+@media (min-width: 1200px) {
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
+}

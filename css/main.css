@@ -28,7 +28,7 @@ p {
 	font-family: 'Jura', sans-serif;
 }
 .container {
-	background-color: #ffffff;
+	background-color: #ad9c82;
 }
 
 .navbar-brand {
@@ -200,6 +200,20 @@ article div img[src="images/BaseBall_300.png"] {
 div img[src="images/BaseBall_300.png"] {
 	zoom:70%;
 }
+
+#contact form {
+	width: 100%;
+	background-color: black;
+}
+
+#contact form input[type="text"] {
+	float: left;
+}
+
+#contact form button[type="submit"] {
+	float: left;
+}
+
 /*=================================================
 				Media Query Elements
 ===================================================*/
